@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+header img{
+    max-width: 350px;
+    width: 100%;
+}
+header{
+    text-align: center;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    height: 100vh;
+    overflow: hidden;
+    overflow-x: hidden;
+    background-image: url(../img/template.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.common-wrap{
+    max-width: 1440px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+.notice-inner{
+    margin-top: 200px;
+    text-align: center;
+}
+.notice-inner p{
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.3px;
+    line-height: 40px;
+    font-size: 26px;
+}
+.notice-inner ul{
+}
+.notice-inner ul li{
+    display: inline-block;
+}
+.notice-inner ul li a i{
+    position: relative;
+    transition: 0.5s;
+}
+
+.notice-inner ul li a{
+    display: block;
+    margin: 50px 25px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+.notice-inner ul li a i::after{
+    content: "";
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.notice-inner ul li a i:hover{
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width:600px) {
+    .notice-inner{
+        margin-top: 100px;
+    }
+}
+
+
+@media only screen and (max-width:450px) {
+    .notice-inner{
+        margin-top: 60px;
+    }
+    .notice-inner p{
+        font-size: 22px;
+    }
+}
